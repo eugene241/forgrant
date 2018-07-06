@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+       
+
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Form</title>
+       <link rel="shortcut icon" href="http://htmlbook.ru/favicon.ico">
+
+
+          <!-- SEO -->
+       <!--
+       <meta name="description" content="Описание сайта">
+       <meta name="keywords" constent="Ключевые слова">
+       <meta name="author" content="Автор">-->
+          
+
+
+          <!-- ПОДКЛЮЧАЕМ СТИЛИ -->
+       <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link href="css/normalize.css" rel="stylesheet"> 
+       <link href="css/style.css" rel="stylesheet">
+           
+
+          <!-- ПОДКЛЮЧАЕМ СКРИПТЫ -->
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src="js/jquery.nicescroll.min.js"></script>   
+       <script src="js/script.js"></script>
+  
+  </head>
+<body>
+   
+
+  <!-- BLOCK WRAPPER -->
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="container">
+        <ul class="menu">
+          <li><a href="#header">Личная информация</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#cover-letter">О себе</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- BACKGROUND -->
+    <div class="background">
+    </div>
+    <!-- BACKGROUND END -->
+
+    <!-- FORM -->
+    <form action="send.php" method="POST" class='form'>
+      <div class="container">
+        <h1 class="form-header">Анкета</h1>
+        <div class="flex-center-width">
+
+           <!-- PERSONAL-INFO -->
+          <div class="personal-info">
+            <div class="flex-center-width">
+              <img src="img/icon-personal-info.png" alt="" class="icon-personal-info">
+            </div>
+            <h2 class="personal-info-header">Личная информация</h2>
+            <div class="flex-center-width">
+              <div class="input-form-block">
+                <input type="text" name="name" class='input-form input-form-name' required>
+                <p class="input-form-text input-form-text-name">ФИО</p>
+              </div>
+              <div class="input-form-block">
+                <select name="select-box" id="selectId" class="select">
+                </select>
+                <p class="input-form-text input-form-text-year">Год рождения</p>
+              </div>
+              <div class="input-form-block input-form-block-third">
+                <input type="text" name="town" class='input-form input-form-town' required>
+                <p class="input-form-text input-form-text-town">Место проживания</p>
+              </div>
+              <div class="input-form-block">
+                <input type="text" name="skype" class='input-form input-form-skype' required>
+                <p class="input-form-text input-form-text-skype">Skype</p>
+              </div>
+              <div class="input-form-block" id='experience'>
+                <input type="text" name="email" class='input-form input-form-email' required>
+                <p class="input-form-text input-form-text-email">E-mail</p>
+              </div>
+          </div>
+        </div>
+        <!-- PERSONAL-INFO END -->
+
+        <!-- EXPERIENCE -->
+        <div class="experience">
+          <div class="flex-center-width">
+            <img src="img/icon-experience.png" alt="" class="icon-experience">
+          </div>
+          <h2 class="experience-header">Расскажите о своем опыте</h2>
+          <div class="block-experience-flex-between">
+            <div class="block-experience">
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-1">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">БЭМ/OOCSS</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-2">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">Stylus/LESS/SASS</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-3">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">Работаю с SVG</p>
+              </div>
+            </div>
+          <div class="block-experience">
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-4">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">Верстаю семантично</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-5">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">ES2015/ES2016</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-6">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">Gulp/GRUNT</p>
+              </div>
+            </div>
+          <div class="block-experience">
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-7">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">Webpack</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-8">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text">jQuery</p>
+              </div>
+              <div class="checkbox-block"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-9">
+                  <span class="checkbox-custom"></span>
+                </label>
+                <p class="block-experience-text" id='cover-letter'>Ипользую Git</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <!-- EXPERIENCE END -->
+
+        <!-- COVER-LETTER -->
+        <div class="cover-letter">
+          <div class="flex-center-width">
+            <img src="img/icon-cover-letter.png" alt="" class="icon-cover-letter">
+          </div>
+          <h2 class="cover-letter-header">Расскажите о себе</h2>
+          <div class="flex-center-width">
+            <p class="cover-letter-text">Напишите несколько предложений, чем привлекла наша вакансия
+            и что вы ожидаете от работы у нас.</p>
+          </div>
+          <div class="flex-center-width">
+            <textarea name="message" class='input-message' placeholder="Понравилась тем, что..." required></textarea>
+            <input type="submit" class="input-submit" name='send' value="Готово">
+          </div>
+        </div>
+        <!-- COVER-LETTER END -->
+      </div>
+      </div>
+    </form>
+    <!-- FORM END -->
+
+  <!-- SCROLL-TOP -->
+  <div class="scroll-top scroll-top-none">
+    <i class="material-icons icons-up">arrow_drop_up</i>
+  </div>
+  <!-- SCROLL-TOP END -->
+  </div>
+  <!-- BLOCK WRAPPER END -->
+
+</body>
+</html>
+
+
+
